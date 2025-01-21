@@ -1,7 +1,9 @@
 const VirtualizedList = ({ data }) => {
   return (
     <>
-      <h1>{data}</h1>
+      {data.map((item, i) => (
+        <h3 key={i}>{item}</h3>
+      ))}
     </>
   );
 };
